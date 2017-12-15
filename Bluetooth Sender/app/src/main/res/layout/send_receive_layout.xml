@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/sendreceiveBackground">
+
+    <Button
+        a:id="@+id/send_btn"
+        a:layout_width="250dp"
+        a:layout_height="100dp"
+        a:layout_alignParentTop="true"
+        a:layout_centerHorizontal="true"
+        a:layout_marginTop="136dp"
+        a:background="@drawable/send_btn"
+        a:onClick="srOnClick" />
+
+    <Button
+        a:id="@+id/receive_btn"
+        a:layout_width="250dp"
+        a:layout_height="100dp"
+        a:layout_alignStart="@+id/send_btn"
+        a:layout_below="@+id/send_btn"
+        a:layout_marginTop="67dp"
+        a:background="@drawable/receive_btn"
+        a:onClick="srOnClick" />
+
+</RelativeLayout>

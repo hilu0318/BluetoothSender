@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/selectMenuBackground">
+
+    <Button
+        a:id="@+id/img_selet_btn"
+        a:layout_width="250dp"
+        a:layout_height="100dp"
+        a:layout_alignParentTop="true"
+        a:layout_centerHorizontal="true"
+        a:layout_marginTop="87dp"
+        a:background="@drawable/img_btn"
+        a:onClick="menuOnClick" />
+
+    <Button
+        a:id="@+id/music_selet_btn"
+        a:layout_width="250dp"
+        a:layout_height="100dp"
+        a:layout_alignStart="@+id/img_selet_btn"
+        a:layout_centerVertical="true"
+        a:background="@drawable/music_btn"
+        a:onClick="menuOnClick" />
+
+
+</RelativeLayout>

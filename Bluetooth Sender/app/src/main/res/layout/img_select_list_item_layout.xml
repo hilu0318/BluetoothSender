@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="100dp">
+
+    <TextView
+        a:id="@+id/ad_img_filename"
+        a:layout_width="250dp"
+        a:layout_height="50dp"
+        a:layout_alignParentStart="true"
+        a:layout_alignParentTop="true"
+        a:paddingLeft="15dp"
+        a:text="TextView"
+        a:textSize="24sp" />
+
+    <TextView
+        a:id="@+id/ad_img_filesize"
+        a:layout_width="250dp"
+        a:layout_height="50dp"
+        a:layout_alignParentStart="true"
+        a:layout_below="@+id/ad_img_filename"
+        a:paddingLeft="15dp"
+        a:text="TextView"
+        a:textSize="18sp" />
+
+    <ImageView
+        a:id="@+id/ad_img_view"
+        a:layout_width="100dp"
+        a:layout_height="100dp"
+        a:layout_alignParentTop="true"
+        a:layout_centerHorizontal="true"
+        a:layout_centerVertical="true"
+        a:layout_marginStart="33dp"
+        a:layout_toEndOf="@+id/ad_img_filename"
+        app:srcCompat="@android:color/transparent" />
+</RelativeLayout>

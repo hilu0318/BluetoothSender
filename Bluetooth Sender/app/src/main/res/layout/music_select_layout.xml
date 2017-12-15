@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:a="http://schemas.android.com/apk/res/android"
+    a:orientation="vertical"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent">
+
+    <ListView
+        a:id="@+id/music_list"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"></ListView>
+
+</LinearLayout>

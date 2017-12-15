@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/mainBackground">
+
+    <Button
+        a:id="@+id/main_btn"
+        a:onClick="mainOnClick"
+        a:layout_width="250dp"
+        a:layout_height="100dp"
+        a:layout_centerHorizontal="true"
+        a:layout_centerVertical="true"
+        a:background="@drawable/bt_btn"/>
+
+</RelativeLayout>

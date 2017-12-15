@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="wrap_content"
+    a:layout_height="60dp"
+    a:background="@android:color/background_light"
+    a:gravity="center_vertical|center">
+
+    <ProgressBar
+        a:id="@+id/progressBar_img"
+        style="?android:attr/progressBarStyle"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_alignParentStart="true"
+        a:layout_centerVertical="true" />
+
+    <TextView
+        a:id="@+id/wait_text"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_centerVertical="true"
+        a:layout_toEndOf="@+id/progressBar_img"
+        a:gravity="center_vertical"
+        a:textSize="30sp" />
+
+</RelativeLayout>

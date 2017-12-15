@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BluetoothSender</string>
+    <string name="bluetooth_not_support">Not Support Bluetooth</string>
+    <string name="bluetooth_connect_cancel">Connecting is Canceled</string>
+    <string name="notyet">Comming soon.</string>
+    <string name="connecting">Connecting.</string>
+    <string name="sending">Sending.</string>
+    <string name="receive_finish">Receive Finish</string>
+    <string name="warning_sending">While to Send Data</string>
+
+    <string name="filename">File Name :</string>
+    <string name="filesize">File Size :</string>
+    <string name="mimetype">MIME Type :</string>
+</resources>

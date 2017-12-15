@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent">
+
+    <RelativeLayout
+        a:id="@+id/receive_label_g"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_alignParentStart="true"
+        a:layout_alignParentTop="true"
+        a:layout_marginStart="23dp"
+        a:layout_marginTop="84dp"
+        a:orientation="vertical"
+        a:padding="15dp">
+
+        <TextView
+            a:id="@+id/receive_filename_label"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignParentStart="true"
+            a:layout_alignParentTop="true"
+            a:text="@string/filename"
+            a:textSize="18sp" />
+
+        <TextView
+            a:id="@+id/receive_filesize_label"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignStart="@+id/receive_filename_label"
+            a:layout_below="@+id/receive_filename_label"
+            a:layout_marginTop="15dp"
+            a:text="@string/filesize"
+            a:textSize="18sp" />
+
+        <TextView
+            a:id="@+id/receive_mimetype_label"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignStart="@+id/receive_filesize_label"
+            a:layout_below="@+id/receive_filesize_label"
+            a:layout_marginTop="15dp"
+            a:text="@string/mimetype"
+            a:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        a:id="@+id/receive_text_g"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_alignBaseline="@+id/receive_label_g"
+        a:layout_alignBottom="@+id/receive_label_g"
+        a:layout_toEndOf="@+id/receive_label_g"
+        a:orientation="vertical"
+        a:padding="15dp">
+
+        <TextView
+            a:id="@+id/receive_filename_text"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignParentStart="true"
+            a:layout_alignParentTop="true"
+            a:textSize="18sp" />
+
+        <TextView
+            a:id="@+id/receive_filesize_text"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignStart="@+id/receive_filename_text"
+            a:layout_below="@+id/receive_filename_text"
+            a:layout_marginTop="15dp"
+            a:textSize="18sp" />
+
+        <TextView
+            a:id="@+id/receive_mimetype_text"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignStart="@+id/receive_filesize_text"
+            a:layout_below="@+id/receive_filesize_text"
+            a:layout_marginTop="15dp"
+            a:textSize="18sp" />
+    </RelativeLayout>
+
+    <ProgressBar
+        a:id="@+id/file_receive_pgb"
+        style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
+        a:layout_width="250dp"
+        a:layout_height="30dp"
+        a:layout_centerHorizontal="true"
+        a:layout_centerVertical="true" />
+
+</RelativeLayout>

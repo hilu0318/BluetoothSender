@@ -190,8 +190,10 @@ public class NewBluetoothService extends BluetoothService {
     }
 
     public void closeAll(){
-        connectThread.close();
-        connectedThread.close();
+        if(connectThread != null)
+            connectThread.close();
+        if(connectedThread != null)
+            connectedThread.close();
     }
 
     public void destroyMsg(){

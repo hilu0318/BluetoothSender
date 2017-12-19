@@ -1,33 +1,14 @@
 package com.test.hilu0318.bluetoothsender.activity;
 
-import android.app.AlertDialog;
 import android.bluetooth.BluetoothAdapter;
-import android.bluetooth.BluetoothDevice;
-import android.content.BroadcastReceiver;
-import android.content.ComponentName;
-import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.IntentFilter;
-import android.content.ServiceConnection;
-import android.os.Handler;
-import android.os.IBinder;
-import android.os.Message;
-import android.os.Messenger;
-import android.os.RemoteException;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
 import com.test.hilu0318.bluetoothsender.R;
 import com.test.hilu0318.bluetoothsender.dialog.WaitingDialog;
-import com.test.hilu0318.bluetoothsender.service.BluetoothService;
-import com.test.hilu0318.bluetoothsender.service.NewBluetoothService;
-import com.test.hilu0318.bluetoothsender.tag.Tag;
-
-import java.util.Set;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,14 +16,13 @@ public class MainActivity extends AppCompatActivity {
 
     private BluetoothAdapter bluetoothAdapter;
     private WaitingDialog waitingDialog;
-    //private NewBluetoothService newBluetoothService;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         waitingDialog = new WaitingDialog(this, R.string.connecting);
-        //newBluetoothService = NewBluetoothService.getInstance();
         bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
     }
 
@@ -56,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(new Intent(MainActivity.this, SendAndReceiveActivity.class));
                     }else{
                         Intent intent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
-                        this.startActivityForResult(intent, BLUETOOTH_RESULT_ACTIVITY);
+                        startActivityForResult(intent, BLUETOOTH_RESULT_ACTIVITY);
                     }
                 }
                 break;
@@ -82,6 +62,4 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
-
-
 }

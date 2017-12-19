@@ -10,9 +10,12 @@
         a:layout_height="50dp"
         a:layout_alignParentStart="true"
         a:layout_alignParentTop="true"
+        a:ellipsize="none"
         a:paddingLeft="15dp"
+        a:singleLine="true"
         a:text="TextView"
-        a:textSize="24sp" />
+        a:textSize="24sp"
+        a:visibility="visible" />
 
     <TextView
         a:id="@+id/ad_img_filesize"
@@ -21,6 +24,7 @@
         a:layout_alignParentStart="true"
         a:layout_below="@+id/ad_img_filename"
         a:paddingLeft="15dp"
+        a:singleLine="true"
         a:text="TextView"
         a:textSize="18sp" />
 
